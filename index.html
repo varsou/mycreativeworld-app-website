@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Creative World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #fa4747;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+    }
+    .logo .expanded {
+      display: none;
+      position: absolute;
+      background-color: #fa4747;
+      padding: 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      top: 100%;
+      left: 0;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .logo:hover .expanded {
+      display: block;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .search-account {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .search-account svg {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+    .search-account svg:hover {
+      fill: #e0e0e0;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      color: #fa4747;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .cta-button {
+      background-color: #fa4747;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .cta-button:hover {
+      background-color: #d93d3d;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      color: #fa4747;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      MCW
+      <span class="expanded">My Creative World</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="search-account">
+      <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 21L15.8 15.8M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>My Creative World</h1>
+    <p>Empower your creativity with our innovative platform. Accelerate your projects and unlock new possibilities.</p>
+    <button class="cta-button">Start Your 30-Day Trial</button>
+  </section>
+
+  <section id="solution" class="section">
+    <h2>Solution</h2>
+    <p>Our AI+BI platform provides enterprises with cutting-edge tools to streamline workflows, enhance decision-making, and drive innovation.</p>
+  </section>
+
+  <section id="download" class="section">
+    <h2>Download</h2>
+    <p>Get the My Creative World app to access our features on the go. Available for iOS and Android.</p>
+    <button class="cta-button">Download Now</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>My Creative World is dedicated to empowering creators and enterprises with intuitive tools and a vibrant community.</p>
+  </section>
+
+  <footer>
+    <p>Hosted and protected by Cloudflare | &copy; 2025 My Creative World</p>
+  </footer>
+</body>
+</html>
