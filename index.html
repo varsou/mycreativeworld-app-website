@@ -48,6 +48,9 @@
       margin: 0;
       padding: 0;
     }
+    nav ul li {
+      position: relative;
+    }
     nav ul li a {
       color: white;
       text-decoration: none;
@@ -56,6 +59,29 @@
     }
     nav ul li a:hover {
       text-decoration: underline;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fa4747;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+    nav ul li:hover .dropdown {
+      display: block;
+    }
+    .dropdown a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .dropdown a:hover {
+      background-color: #d93d3d;
     }
     .search-account {
       display: flex;
@@ -130,7 +156,12 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#solution">Solution</a></li>
+        <li>
+          <a href="#solution">Solution</a>
+          <div class="dropdown">
+            <a href="/app">Craft your Crave</a>
+          </div>
+        </li>
         <li><a href="#download">Download</a></li>
         <li><a href="#about">About</a></li>
       </ul>
@@ -154,7 +185,7 @@
 
   <section id="solution" class="section">
     <h2>Solution</h2>
-    <p>Our creative platform provides cutting-edge tools to streamline daily routines, enhance decision-making, and drive innovation.</p>
+    <p>Our AI+BI platform provides enterprises with cutting-edge tools to streamline workflows, enhance decision-making, and drive innovation.</p>
   </section>
 
   <section id="download" class="section">
