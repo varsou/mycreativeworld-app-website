@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Creative World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #fa4747;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: relative;
+    }
+    .logo .expanded {
+      display: none;
+      position: absolute;
+      background-color: #fa4747;
+      padding: 0.5rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .logo:hover .expanded {
+      display: block;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .search-account {
+      display: flex;
+      gap: 1rem;
+    }
+    .search-account svg {
+      cursor: pointer;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      color: #fa4747;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      background-color: #fa4747;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background-color: #d93d3d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div className="logo">
+      MCW
+      <span className="expanded">My Creative World</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div className="search-account">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 21L15.8 15.8M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+
+  <section className="hero">
+    <h1>My Creative World</h1>
+    <p>Empower your creativity with our innovative platform. Accelerate your projects and unlock new possibilities.</p>
+    <button className="cta-button">Start Now</button>
+  </section>
+</body>
+</html>
